@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../assets/images/hero-bg-image.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+
+  &__wrapper {
+    display: flex;
+    gap: 331px;
+  }
+  &__nav {
+    display: flex;
+    gap: 46px;
+  }
+  &__nav-list {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+  }
+  &__nav-icons {
+    display: flex;
+    gap: 38px;
+  }
+  &__nav-item a{
+    font-family: "Open Sans";
+font-weight: 400;
+font-size: 18px;
+line-height: 160%;
+letter-spacing: 0%;
+color: $bg-color;
+
+&:hover{
+    color: $danger-color;
+    transition: $transition;
+}
+  }
+
+}

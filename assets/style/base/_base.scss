@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  color: $text-color;
+  background: $bg-color;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-secondary;
+  margin-bottom: $spacing-sm;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: $transition;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.container{
+    max-width: 1200px;
+}

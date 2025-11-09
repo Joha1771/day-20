@@ -1,0 +1,56 @@
+.hero {
+  display: flex;
+  align-items: center;
+  padding-bottom: 110px;
+  &__wrapper {
+    padding-top: 110px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  &__content-title {
+    width: 524px;
+    height: 210px;
+    h2 {
+      font-family: "Josefin Sans";
+      font-weight: 700;
+      font-size: 58px;
+      line-height: 120%;
+      letter-spacing: 0%;
+      color: $primary-color;
+    }
+  }
+  &__content-description {
+    width: 506px;
+    height: 64px;
+    p {
+      font-family: "Open Sans";
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 160%;
+      letter-spacing: 0%;
+      color: $primary-color;
+    }
+  }
+  &__content-button {
+    padding-top: 28px;
+    button {
+      font-family: "Open Sans";
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 160%;
+      letter-spacing: 0%;
+      color: $primary-color;
+      padding: 16px 35px;
+      background-color: $danger-color;
+      border-radius: $border-radius;
+      &:hover {
+        transition: $transition;
+        background-color: transparent;
+        border: 1px solid $danger-color;
+      }
+    }
+  }
+}

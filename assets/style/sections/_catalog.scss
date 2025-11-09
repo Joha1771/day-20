@@ -1,0 +1,65 @@
+.catalog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 140px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__content {
+    display: flex;
+    gap: 528px;
+    &-title {
+      h2 {
+        font-family: "Josefin Sans";
+        font-weight: 600;
+        font-size: 43px;
+        line-height: 130%;
+        letter-spacing: 0;
+        color: $secondary-color;
+      }
+    }
+    &-description {
+      p {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        letter-spacing: 0;
+      }
+    }
+  }
+
+  &__choose-icon {
+    display: flex;
+    gap: 20px;
+    img {
+      width: 46px;
+      height: 46px;
+    }
+  }
+  &__cards {
+    display: flex;
+    gap: 82px;
+    padding-top: 60px;
+  }
+&__card1{
+   @include card-style 
+}
+&__card2{
+@include card-style 
+}
+&__card3{
+@include card-style;
+width: 369px;
+&-image img{
+    width: 100%;
+
+}
+&-content-price{
+    padding-top: 10px;
+}
+}
+
+}
