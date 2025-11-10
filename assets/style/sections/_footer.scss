@@ -1,0 +1,133 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $secondary-color;
+  color: $primary-color;
+  & .container{
+    position: relative;
+    @media(max-width: 1200px){
+  margin: 0 auto;
+  padding: 0 00px;
+    }
+   @media(max-width: 778px){
+      margin: 0 auto;
+  padding: 0 0px;
+   }
+  }
+  &__banner {
+    img {
+      position: absolute;
+      top: 0;
+      left: 0px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    gap: 129px;
+    padding-top: 60px;
+    padding-bottom: 53px;
+    align-items: center;
+    @media(max-width: 1200px){
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 40px;
+        }
+    }
+
+  &__content {
+    display: flex;
+    gap: 43px;
+     @media(max-width: 778px){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &-columns-wrapper {
+      display: flex;
+      gap: 148px;
+      align-items: center;
+    }
+    &-column1 {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      &-description {
+        p {
+          font-family: "Open Sans";
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 1.6;
+          letter-spacing: 0;
+        }
+      }
+    }
+    &-column2 {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      &-description {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      h5 {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.5;
+        letter-spacing: 0;
+      }
+      p {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.5;
+        letter-spacing: 0;
+      }
+    }
+    &-column1-number {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding-bottom: 40px;
+    &-title {
+      h5 {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.5;
+        letter-spacing: 0;
+      }
+    }
+  }
+  &__socials-icons {
+    display: flex;
+    gap: 30px;
+  }
+  &__bottom{
+    @media(max-width: 778px){
+        width: 100px;
+        padding-left: 40px;
+    }
+    @media(max-width: 430px){
+      padding-left: 20px;  
+    }
+    padding-bottom: 53px;
+    p{
+        padding: 25px 301px 0px 301px;
+        border-top: 1px solid #ffffffa4;
+        @media(max-width: 778px){
+        padding: 25px 301px 0px 50px;
+        
+    }
+    }
+    
+}
+  }
+

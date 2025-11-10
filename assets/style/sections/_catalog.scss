@@ -4,6 +4,25 @@
   justify-content: center;
   padding-top: 140px;
   padding-bottom: 140px;
+  & .container{
+    @media (max-width: 1230px){
+      margin: 0 auto;
+  padding: 0 50px;
+    }
+    @media (max-width: 870px){
+      margin: 0 auto;
+  padding: 0 50px;
+    }
+    @media (max-width: 600px){
+      margin: 0 auto;
+  padding: 0 0px;
+    }
+    @media (max-width: 470px){
+      margin: 0 auto;
+  padding: 0 0px;
+     }
+
+    }
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -11,6 +30,18 @@
   &__content {
     display: flex;
     gap: 528px;
+     @media (max-width: 1230px){
+      gap: 200px;
+     }
+     @media (max-width: 870px){
+      gap: 50px;
+      display: flex;
+      flex-direction: column;
+     }
+     @media (max-width: 470px){
+  padding-left:  30px;
+     }
+     
     &-title {
       h2 {
         font-family: "Josefin Sans";
@@ -35,15 +66,29 @@
   &__choose-icon {
     display: flex;
     gap: 20px;
+
     img {
       width: 46px;
       height: 46px;
     }
+
   }
   &__cards {
     display: flex;
     gap: 82px;
     padding-top: 60px;
+    @media (max-width: 1230px){
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 870px){
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      padding-left: 30px;
+    }
+    @media (max-width: 870px){
+      padding-left: 20px;
+    }
   }
 &__card1{
    @include card-style 
